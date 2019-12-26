@@ -1,3 +1,7 @@
+## 简介
+
+调用 tinify node api，一次性`递归`压缩指定目录或当前目录下所有图片文件，可用于批量压缩前端项目中图片。
+
 ## 安装
 
 npm install tinify-project-images -g
