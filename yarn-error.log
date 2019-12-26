@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn link get_picture
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.21.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, symlink '../../../.config/yarn/link/get_picture' -> '/Users/baolq/mine/get_picture/node_modules/get_picture'
+
+npm manifest: 
+  {
+    "name": "get_picture",
+    "version": "1.3.2",
+    "description": "get pictures what you want.",
+    "main": "src/index.js",
+    "bin": {
+      "tp": "bin/gp"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/1eeing/get_picture.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/1eeing/get_picture/issues"
+    },
+    "keywords": [
+      "puppeteer",
+      "commander",
+      "inquirer",
+      "getPictures"
+    ],
+    "homepage": "https://github.com/1eeing/get_picture#readme",
+    "dependencies": {
+      "chalk": "^2.4.1",
+      "commander": "^2.19.0",
+      "inquirer": "^6.2.0",
+      "mkdirp": "^0.5.1",
+      "puppeteer": "^1.9.0",
+      "tinify": "^1.6.0-beta.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
