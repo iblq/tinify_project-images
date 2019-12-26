@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1eeing/get_picture.git"
+    "url": "git+https://github.com/iblq/tinify_project-images.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/1eeing/get_picture/issues"
+    "url": "https://github.com/iblq/tinify_project-images/issues"
   },
   "keywords": [
     "puppeteer",
@@ -24,7 +24,7 @@
     "inquirer",
     "getPictures"
   ],
-  "homepage": "https://github.com/1eeing/get_picture#readme",
+  "homepage": "https://github.com/iblq/tinify_project-images#readme",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
