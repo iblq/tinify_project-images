@@ -1,6 +1,12 @@
 ## 安装
 
-npm install tinify_images -g
+npm install tinify-project-images -g
+
+## 开发
+
+基于 (1eeing/get_picture)[https://github.com/1eeing/get_picture] 简单修改，修改如下
+
+- 默认递归读取当前目录所有可压缩图片，压缩后图片输出地址为原地址，覆盖图片，方便用于压缩整个项目中的图片
 
 ## 使用说明
 
@@ -9,15 +15,27 @@ npm install tinify_images -g
     tp -h|--help 查看帮助
     tp s|start 启动程序
     tp c|clean 清空输出目录中的图片
-    tp p|imgMin 压缩目录中的图片
+    tp p|imgMin 压缩目录中的图片，默认遍历当前命令执行目录
 
     // 压缩图片说明
     tp p --help 查看帮助
     tp p -k|--key [key] tinypng官网申请的key，第一次必填，填写后会保存在本地。下次可以不填，从历史记录里选取。
-    tp p -p|--path [path] 自定义检索路径，请填写绝对路径，默认取当前命令行目录下的/images路径
+    tp p -p|--path [path] 可自定义图片目录，请填写绝对路径
 ```
 
-> 基于 (1eeing/get_picture)[https://github.com/1eeing/get_picture] 修改，默认递归读取当前目录文件，压缩后图片输出地址为原地址，覆盖图片。
+示例
+
+```shell
+
+cd work/accounting
+
+tp p # 压缩 work/accounting 下所有图片
+
+pwd -> '/User/test/work/accounting'
+
+tp p -p /User/test/work/accounting/src  # 压缩 work/accounting/src 下的所有图片
+
+```
 
 ## 常见问题
 
