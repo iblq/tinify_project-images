@@ -1,6 +1,6 @@
 ## 简介
 
-调用 tinify node api，一次性`递归`压缩指定目录或当前目录下所有图片文件，可用于批量压缩前端项目中图片。
+调用 `tinify node api`，`递归` 压缩指定目录或当前目录下所有图片文件，可用于批量压缩前端项目中图片。
 
 ## 安装
 
@@ -8,17 +8,16 @@ npm install tinify-project-images -g
 
 ## 开发
 
-基于 (1eeing/get_picture)[https://github.com/1eeing/get_picture] 简单修改，修改如下
+基于 [1eeing/get_picture](https://github.com/1eeing/get_picture) 简单修改，修改如下
 
 - 默认递归读取当前目录所有可压缩图片，压缩后图片输出地址为原地址，覆盖图片，方便用于压缩整个项目中的图片
+- 去除图片搜索功能
 
 ## 使用说明
 
 ```
     tp -v|--version 查看版本
     tp -h|--help 查看帮助
-    tp s|start 启动程序
-    tp c|clean 清空输出目录中的图片
     tp p|imgMin 压缩目录中的图片，默认遍历当前命令执行目录
 
     // 压缩图片说明

@@ -5,31 +5,9 @@ const pkg = require("../package.json");
 const qs = require("./helper/questions");
 const storeKey = require("./helper/storeKey");
 const tinypngKeys = require("./config/tinypngKeys");
-const App = require("./app");
-const Clean = require("./clean");
 const ImgMin = require("./imgMin");
 
 program.version(pkg.version, "-v, --version");
-
-program
-  .command("search")
-  .alias("s")
-  .description("Get search pictures what you want.")
-  .action(async () => {
-    const answers = await inquirer.prompt(qs.startQuestions);
-    const app = new App(answers);
-    await app.start();
-  });
-
-program
-  .command("clean")
-  .alias("c")
-  .description('Clean all pictures in directory "output".')
-  .action(async () => {
-    const answers = await inquirer.prompt(qs.confirmClean);
-    const clean = new Clean();
-    answers.isRemove && (await clean.clean());
-  });
 
 program
   .command("imgMin")
